@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
@@ -48,7 +48,7 @@ namespace VPG.CreatorEditor.UI.Wizard
         }
 
 #if UNITY_2019_4_OR_NEWER && !UNITY_EDITOR_OSX
-        [MenuItem("Innoactive/Create New Course...", false, 0)]
+        [MenuItem("VPG/Create New Course...", false, 0)]
 #endif
         internal static void Show()
         {

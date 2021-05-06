@@ -14,7 +14,7 @@ namespace VPG.CreatorEditor.CreatorMenu
         /// <summary>
         /// Allows to import trainings.
         /// </summary>
-        [MenuItem("Innoactive/Import Training Course", false, 14)]
+        [MenuItem("VPG/Import Training Course", false, 14)]
         private static void ImportTraining()
         {
             string path = EditorUtility.OpenFilePanel("Select your training", ".", String.Empty);

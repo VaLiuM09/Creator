@@ -8,7 +8,7 @@ namespace VPG.CreatorEditor.CreatorMenu
         /// <summary>
         /// Setup the current unity scene to be a functioning training scene.
         /// </summary>
-        [MenuItem("Innoactive/Settings", false, 16)]
+        [MenuItem("VPG/Settings", false, 16)]
         public static void Show()
         {
             SettingsService.OpenProjectSettings("Project/Creator");

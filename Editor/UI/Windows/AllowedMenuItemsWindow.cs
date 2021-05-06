@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using VPG.Creator.Core.Behaviors;
@@ -18,7 +18,7 @@ namespace VPG.CreatorEditor.UI.Windows
     {
         private static AllowedMenuItemsWindow window;
 
-        private const string menuPath = "Innoactive/Developer/Allowed Menu Items Configuration";
+        private const string menuPath = "VPG/Developer/Allowed Menu Items Configuration";
 
         private bool isEditUnlocked;
         private static IList<EntityEntry> behaviorList;

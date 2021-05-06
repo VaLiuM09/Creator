@@ -79,7 +79,7 @@ namespace VPG.CreatorEditor.TestTools
             };
         }
 
-        [MenuItem("Innoactive/Developer/Editor IMGUI Tests Explorer", false, 81)]
+        [MenuItem("VPG/Developer/Editor IMGUI Tests Explorer", false, 81)]
         private static void ShowFromMenu()
         {
             GetWindow<EditorImguiTestsExplorer>();

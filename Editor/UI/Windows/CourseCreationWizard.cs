@@ -1,4 +1,4 @@
-﻿using VPG.Creator.Core;
+using VPG.Creator.Core;
 using VPG.Creator.Core.Configuration;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -15,7 +15,7 @@ namespace VPG.CreatorEditor.UI.Windows
 
         // CourseCreationWizard is obsolete and was replaced by CreatorSetupWizard
 #if !UNITY_2019_4_OR_NEWER || UNITY_EDITOR_OSX
-        [MenuItem("Innoactive/Create New Course...")]
+        [MenuItem("VPG/Create New Course...")]
 #endif
         private static void ShowWizard()
         {
