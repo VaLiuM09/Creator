@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Innoactive.CreatorEditor.CreatorMenu
+namespace VPG.CreatorEditor.CreatorMenu
 {
     internal static class DocumentationMenuEntry
     {

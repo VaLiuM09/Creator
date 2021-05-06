@@ -2,11 +2,11 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using Innoactive.CreatorEditor.XRUtils;
-using Innoactive.CreatorEditor.Analytics;
+using VPG.CreatorEditor.XRUtils;
+using VPG.CreatorEditor.Analytics;
 using UnityEditor;
 
-namespace Innoactive.CreatorEditor.UI.Wizard
+namespace VPG.CreatorEditor.UI.Wizard
 {
     /// <summary>
     /// Wizard page which retrieves and loads XR SDKs.

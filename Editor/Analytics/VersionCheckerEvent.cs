@@ -1,9 +1,9 @@
-﻿using Innoactive.CreatorEditor;
-using Innoactive.CreatorEditor.Analytics;
+﻿using VPG.CreatorEditor;
+using VPG.CreatorEditor.Analytics;
 using UnityEditor;
 using UnityEngine;
 
-namespace Innoactive.Creator.Core.Editor
+namespace VPG.Creator.Core.Editor
 {
     /// <summary>
     /// Checks if the version of the creator was updated and sends an event.

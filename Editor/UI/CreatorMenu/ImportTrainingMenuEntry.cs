@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Innoactive.Creator.Core.Utils;
-using Innoactive.Creator.Core.Serialization;
+using VPG.Creator.Core.Utils;
+using VPG.Creator.Core.Serialization;
 using UnityEditor;
 using UnityEngine;
 
-namespace Innoactive.CreatorEditor.CreatorMenu
+namespace VPG.CreatorEditor.CreatorMenu
 {
     internal static class ImportTrainingMenuEntry
     {

@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using UnityEditor;
 using UnityEngine;
-using Innoactive.Creator.Core.Utils;
+using VPG.Creator.Core.Utils;
 
-namespace Innoactive.CreatorEditor.TestTools
+namespace VPG.CreatorEditor.TestTools
 {
     /// <summary>
     /// Editor window which allows user to manage editor IMGUI tests.

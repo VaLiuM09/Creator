@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Innoactive.CreatorEditor.UI
+namespace VPG.CreatorEditor.UI
 {
     /// <summary>
     /// Helper editor class that allows retrieving or drawing a Innoactive Logo that

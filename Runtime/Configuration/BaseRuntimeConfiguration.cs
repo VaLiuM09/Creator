@@ -1,12 +1,12 @@
 ﻿using System;
-using Innoactive.Creator.Core.Configuration.Modes;
-using Innoactive.Creator.Core.IO;
-using Innoactive.Creator.Core.RestrictiveEnvironment;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Core.Serialization;
+using VPG.Creator.Core.Configuration.Modes;
+using VPG.Creator.Core.IO;
+using VPG.Creator.Core.RestrictiveEnvironment;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Serialization;
 using UnityEngine;
 
-namespace Innoactive.Creator.Core.Configuration
+namespace VPG.Creator.Core.Configuration
 {
     /// <summary>
     /// Base class for your runtime course configuration. Extend it to create your own.

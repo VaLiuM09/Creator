@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
- namespace Innoactive.CreatorEditor
+ namespace VPG.CreatorEditor
  {
      /// <summary>
      /// Modal Window that helps setting the 'API Compatibility Level' to '.Net 4.x'.

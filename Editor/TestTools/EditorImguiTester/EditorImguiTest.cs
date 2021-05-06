@@ -6,11 +6,11 @@ using Newtonsoft.Json;
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
-using Innoactive.Creator.Core.Utils;
-using Innoactive.CreatorEditor.ImguiTester;
+using VPG.Creator.Core.Utils;
+using VPG.CreatorEditor.ImguiTester;
 using UnityEngine.TestTools;
 
-namespace Innoactive.CreatorEditor.TestTools
+namespace VPG.CreatorEditor.TestTools
 {
     /// <summary>
     /// Inherit from this class to implement your own editor IMGUI tests.

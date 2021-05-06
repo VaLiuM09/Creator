@@ -1,7 +1,7 @@
-using Innoactive.Creator.Core;
-using Innoactive.CreatorEditor.UI.Windows;
+using VPG.Creator.Core;
+using VPG.CreatorEditor.UI.Windows;
 
-namespace Innoactive.CreatorEditor
+namespace VPG.CreatorEditor
 {
     /// <summary>
     /// An interface for a strategy that defines how various events should be handled by the Creator editor.

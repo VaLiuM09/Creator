@@ -1,10 +1,10 @@
 using System;
 using UnityEngine;
-using Innoactive.Creator.Core.Configuration.Modes;
-using Innoactive.Creator.Core.SceneObjects;
-using Innoactive.Creator.Core.Serialization;
+using VPG.Creator.Core.Configuration.Modes;
+using VPG.Creator.Core.SceneObjects;
+using VPG.Creator.Core.Serialization;
 
-namespace Innoactive.Creator.Core.Configuration
+namespace VPG.Creator.Core.Configuration
 {
     /// <summary>
     /// An interface for training runtime configurations. Implement it to create your own.

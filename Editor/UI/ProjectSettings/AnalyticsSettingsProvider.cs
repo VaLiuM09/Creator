@@ -1,9 +1,9 @@
 ﻿using System;
-using Innoactive.CreatorEditor.Analytics;
+using VPG.CreatorEditor.Analytics;
 using UnityEditor;
 using UnityEngine;
 
-namespace Innoactive.CreatorEditor.UI
+namespace VPG.CreatorEditor.UI
 {
     internal class AnalyticsSettingsProvider : BaseSettingsProvider
     {

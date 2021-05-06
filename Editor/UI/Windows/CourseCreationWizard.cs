@@ -1,10 +1,10 @@
-﻿using Innoactive.Creator.Core;
-using Innoactive.Creator.Core.Configuration;
+﻿using VPG.Creator.Core;
+using VPG.Creator.Core.Configuration;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace Innoactive.CreatorEditor.UI.Windows
+namespace VPG.CreatorEditor.UI.Windows
 {
     /// <summary>
     /// Wizard for training course creation and management.

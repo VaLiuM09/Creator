@@ -1,7 +1,7 @@
-using Innoactive.CreatorEditor.Configuration;
+using VPG.CreatorEditor.Configuration;
 using UnityEditor;
 
-namespace Innoactive.CreatorEditor.CreatorMenu
+namespace VPG.CreatorEditor.CreatorMenu
 {
     internal static class ShowCreatorSettingsMenuEntry
     {

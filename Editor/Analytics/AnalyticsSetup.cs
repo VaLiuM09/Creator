@@ -6,7 +6,7 @@ using Innoactive.CreatorPro.Account;
 using UnityEditor;
 using UnityEngine;
 
-namespace Innoactive.CreatorEditor.Analytics
+namespace VPG.CreatorEditor.Analytics
 {
     /// <summary>
     /// Checks on each recompile/start of the unity if we have already sent a hello.

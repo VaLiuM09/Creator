@@ -1,4 +1,4 @@
-﻿﻿namespace Innoactive.Creator.Core
+﻿﻿namespace VPG.Creator.Core
 {
     /// <summary>
     /// Utility data which is used by the Creator SDK custom editors.
