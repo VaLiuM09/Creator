@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using VPG.Creator.Core.Behaviors;
 using VPG.Creator.Core.Properties;

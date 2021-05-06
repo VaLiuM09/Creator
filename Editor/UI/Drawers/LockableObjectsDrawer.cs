@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using VPG.Creator.Core;
 using VPG.Creator.Core.Properties;
