@@ -30,7 +30,7 @@ using UnityEngine;
          private void OnGUI()
          {
              EditorGUILayout.Space();
-             EditorGUILayout.HelpBox($"This Unity project uses {currentLevel} but some features of the Creator require .NET 4.X support.\n\nThe built application might not work as expected.", MessageType.Warning);
+             EditorGUILayout.HelpBox($"This Unity project uses {currentLevel} but some features require .NET 4.X support.\n\nThe built application might not work as expected.", MessageType.Warning);
              EditorGUILayout.Space(20f);
              EditorGUILayout.BeginHorizontal();
              GUILayout.FlexibleSpace();
