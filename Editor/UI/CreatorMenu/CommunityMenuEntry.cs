@@ -8,7 +8,7 @@ namespace VPG.CreatorEditor.CreatorMenu
         /// <summary>
         /// Allows to open the URL to Innoactive community.
         /// </summary>
-        [MenuItem("Innoactive/Help/Community", false, 80)]
+        [MenuItem("VPG/Innoactive Help/Community", false, 80)]
         private static void OpenCommunityPage()
         {
             Application.OpenURL("https://innoactive.io/creator/community");
