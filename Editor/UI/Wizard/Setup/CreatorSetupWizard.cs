@@ -23,7 +23,7 @@ namespace VPG.CreatorEditor.UI.Wizard
         /// </summary>
         public static event EventHandler<EventArgs> SetupFinished;
 
-        private const string XRInnoactiveAssemblyName = "Innoactive.Creator.XRInteraction";
+        private const string XRDefaultAssemblyName = "VPG.Creator.XRInteraction";
         private const string XRAssemblyName = "Unity.XR.Management";
         static CreatorSetupWizard()
         {
@@ -69,7 +69,7 @@ namespace VPG.CreatorEditor.UI.Wizard
                 xrSetupIndex++;
             }
 #endif
-            bool isShowingXRSetupPage = EditorReflectionUtils.AssemblyExists(XRInnoactiveAssemblyName);
+            bool isShowingXRSetupPage = EditorReflectionUtils.AssemblyExists(XRDefaultAssemblyName);
             isShowingXRSetupPage &= EditorReflectionUtils.AssemblyExists(XRAssemblyName) == false;
             isShowingXRSetupPage &= XRLoaderHelper.GetCurrentXRConfiguration()
                 .Contains(XRLoaderHelper.XRConfiguration.XRLegacy) == false;
@@ -81,7 +81,7 @@ namespace VPG.CreatorEditor.UI.Wizard
 
             wizard.WizardClosing += OnWizardClosing;
 
-            wizard.Setup("Innoactive Creator - VR Training Setup Wizard", pages);
+            wizard.Setup("Creator - VR Training Setup Wizard", pages);
             wizard.ShowModalUtility();
         }
 

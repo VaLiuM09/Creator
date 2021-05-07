@@ -1,10 +1,10 @@
-﻿using System.IO;
+using System.IO;
 using VPG.CreatorEditor;
 using UnityEditor;
 using UnityEngine;
 
 /// <summary>
-/// Settings for an Innoactive Creator Unity project.
+/// Settings for a Creator Unity project.
 /// </summary>
 public partial class CreatorProjectSettings : ScriptableObject
 {

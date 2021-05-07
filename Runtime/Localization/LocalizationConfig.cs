@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 
 namespace VPG.Creator.Core.Internationalization
@@ -7,7 +7,7 @@ namespace VPG.Creator.Core.Internationalization
     /// Localization configuration data structure. Will load all sources in an ordered way overwriting all
     /// keys already existing.
     /// </summary>
-    [CreateAssetMenu(fileName = "LocalizationConfig", menuName = "Innoactive/Localization Config", order = 0)]
+    [CreateAssetMenu(fileName = "LocalizationConfig", menuName = "VPG/Localization Config", order = 0)]
     public class LocalizationConfig : ScriptableObject
     {
         /// <summary>

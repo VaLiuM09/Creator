@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -120,7 +120,7 @@ namespace VPG.Creator.Core.Serialization.NewtonsoftJson
         {
             public override Type BindToType(string assemblyName, string typeName)
             {
-                if (typeName == "Innoactive.CreatorEditor.UI.Drawers.Metadata.ReorderableElementMetadata")
+                if (typeName == "VPG.CreatorEditor.UI.Drawers.Metadata.ReorderableElementMetadata")
                 {
                     return typeof(ReorderableElementMetadata);
                 }
