@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 #if CREATOR_PRO
 using Innoactive.CreatorPro.Account;
@@ -19,7 +19,10 @@ namespace VPG.CreatorEditor.Analytics
 
         static AnalyticsSetup()
         {
-            AnalyticsState trackingState = AnalyticsUtils.GetTrackingState();
+            //AnalyticsState trackingState = AnalyticsUtils.GetTrackingState();
+            //Force analytics disabled.
+            AnalyticsState trackingState = AnalyticsState.Disabled;
+
             if (trackingState == AnalyticsState.Disabled)
             {
                 return;

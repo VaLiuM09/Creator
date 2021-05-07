@@ -57,7 +57,7 @@ namespace VPG.CreatorEditor.UI.Wizard
             {
                 new WelcomePage(),
                 new TrainingSceneSetupPage(),
-                new AnalyticsPage(),
+                //new AnalyticsPage(),
                 new AllAboutPage()
             };
 

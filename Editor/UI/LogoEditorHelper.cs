@@ -35,7 +35,7 @@ namespace VPG.CreatorEditor.UI
         }
 
         /// <summary>
-        /// Draws the Innoactive logo with the specified width in the current GUI context
+        /// Draws the logo with the specified width in the current GUI context
         /// </summary>
         public static void DrawLogo(float width)
         {
