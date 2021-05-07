@@ -48,7 +48,7 @@ namespace VPG.CreatorEditor.UI.Wizard
         }
 
 #if UNITY_2019_4_OR_NEWER && !UNITY_EDITOR_OSX
-        [MenuItem("VPG/Create New Course...", false, 0)]
+        [MenuItem("VR Process Gizmo/Create New Course...", false, 0)]
 #endif
         internal static void Show()
         {
