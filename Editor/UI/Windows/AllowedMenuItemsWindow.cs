@@ -113,7 +113,7 @@ namespace VPG.CreatorEditor.UI.Windows
 
             GUILayout.Space(20f);
 
-            EditorGUILayout.HelpBox("This window provides editor configuration settings for the Innoactive Creator. "
+            EditorGUILayout.HelpBox("This window provides editor configuration settings for the VR Process Gizmo. "
                 + "It is supposed to be changed only by a software developer. "
                 + "Modification of these values may lead to various issues.", MessageType.Warning);
 

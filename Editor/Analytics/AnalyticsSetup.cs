@@ -19,8 +19,8 @@ namespace VPG.CreatorEditor.Analytics
 
         static AnalyticsSetup()
         {
+            //VPG - Force analytics disabled.
             //AnalyticsState trackingState = AnalyticsUtils.GetTrackingState();
-            //Force analytics disabled.
             AnalyticsState trackingState = AnalyticsState.Disabled;
 
             if (trackingState == AnalyticsState.Disabled)

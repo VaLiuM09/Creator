@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using VPG.Creator.Core.Configuration.Modes;
 using VPG.Creator.Core.IO;
 using VPG.Creator.Core.RestrictiveEnvironment;
@@ -36,7 +36,7 @@ namespace VPG.Creator.Core.Configuration
 
         /// <summary>
         /// Default input action asset which is used when no customization of key bindings are done.
-        /// Should be stored inside the Creator package.
+        /// Should be stored inside the VR Process Gizmo package.
         /// </summary>
         public virtual string DefaultInputActionAssetPath { get; } = "KeyBindings/CreatorDefaultKeyBindings";
 

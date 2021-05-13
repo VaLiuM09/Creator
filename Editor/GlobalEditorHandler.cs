@@ -14,7 +14,7 @@ namespace VPG.CreatorEditor
     [InitializeOnLoad]
     internal static class GlobalEditorHandler
     {
-        internal const string LastEditedCourseNameKey = "Innoactive.Creator.Editors.LastEditedCourseName";
+        internal const string LastEditedCourseNameKey = "VPG.Creator.Editors.LastEditedCourseName";
 
         private static IEditingStrategy strategy;
 

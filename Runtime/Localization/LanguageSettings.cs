@@ -1,9 +1,9 @@
-﻿using VPG.Creator.Core.Runtime.Utils;
+using VPG.Creator.Core.Runtime.Utils;
 
 namespace VPG.Creator.Core.Internationalization
 {
     /// <summary>
-    /// Language settings for the Creator.
+    /// Language settings for the VR Process Gizmo.
     /// </summary>
     public class LanguageSettings : SettingsObject<LanguageSettings>
     {

@@ -1,4 +1,4 @@
-﻿using VPG.CreatorEditor;
+using VPG.CreatorEditor;
 using VPG.CreatorEditor.Analytics;
 using UnityEditor;
 using UnityEngine;
@@ -6,7 +6,7 @@ using UnityEngine;
 namespace VPG.Creator.Core.Editor
 {
     /// <summary>
-    /// Checks if the version of the creator was updated and sends an event.
+    /// Checks if the version of the VR Process Gizmo was updated and sends an event.
     /// </summary>
     [InitializeOnLoad]
     internal static class VersionCheckerEvent

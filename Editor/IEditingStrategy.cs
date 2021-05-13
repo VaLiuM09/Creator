@@ -4,7 +4,7 @@ using VPG.CreatorEditor.UI.Windows;
 namespace VPG.CreatorEditor
 {
     /// <summary>
-    /// An interface for a strategy that defines how various events should be handled by the Creator editor.
+    /// An interface for a strategy that defines how various events should be handled by the VR Process Gizmo editor.
     /// </summary>
     internal interface IEditingStrategy
     {

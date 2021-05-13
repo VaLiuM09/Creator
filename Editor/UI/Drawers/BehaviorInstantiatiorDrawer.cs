@@ -34,7 +34,7 @@ namespace VPG.CreatorEditor.UI.Drawers
             {
                 rect.y += rect.height + EditorDrawingHelper.VerticalSpacing;
                 rect.width -= EditorDrawingHelper.IndentationWidth;
-                EditorGUI.HelpBox(rect, "Your project does not contain any Behaviors. Either create one or import a Creator Component.", MessageType.Error);
+                EditorGUI.HelpBox(rect, "Your project does not contain any Behaviors. Either create one or import a VR Process Gizmo Component.", MessageType.Error);
                 rect.height += rect.height + EditorDrawingHelper.VerticalSpacing;
             }
 

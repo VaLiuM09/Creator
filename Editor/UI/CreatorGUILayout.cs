@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,7 +11,7 @@ using Debug = UnityEngine.Debug;
 namespace VPG.CreatorEditor.UI
 {
     /// <summary>
-    /// Layout extension for the creator. This class might
+    /// Layout extension for the VR Process Gizmo.
     /// </summary>
     public static class CreatorGUILayout
     {

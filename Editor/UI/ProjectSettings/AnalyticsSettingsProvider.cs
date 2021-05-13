@@ -3,6 +3,7 @@
 //using UnityEditor;
 //using UnityEngine;
 
+// VPG - Disabled analytics page.
 //namespace VPG.CreatorEditor.UI
 //{
 //    internal class AnalyticsSettingsProvider : BaseSettingsProvider

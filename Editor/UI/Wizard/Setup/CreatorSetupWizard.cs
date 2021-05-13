@@ -19,7 +19,7 @@ namespace VPG.CreatorEditor.UI.Wizard
     public static class CreatorSetupWizard
     {
         /// <summary>
-        /// Will be called when the creator Setup wizard is closed.
+        /// Will be called when the VR Process Gizmo Setup wizard is closed.
         /// </summary>
         public static event EventHandler<EventArgs> SetupFinished;
 
