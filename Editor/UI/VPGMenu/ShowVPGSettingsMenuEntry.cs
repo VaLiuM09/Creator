@@ -1,9 +1,9 @@
-using VPG.CreatorEditor.Configuration;
+using VPG.Editor.Configuration;
 using UnityEditor;
 
-namespace VPG.CreatorEditor.CreatorMenu
+namespace VPG.Editor.VPGMenu
 {
-    internal static class ShowCreatorSettingsMenuEntry
+    internal static class ShowVPGSettingsMenuEntry
     {
         /// <summary>
         /// Setup the current unity scene to be a functioning training scene.
@@ -11,7 +11,7 @@ namespace VPG.CreatorEditor.CreatorMenu
         [MenuItem("VR Process Gizmo/Settings", false, 16)]
         public static void Show()
         {
-            SettingsService.OpenProjectSettings("Project/Creator");
+            SettingsService.OpenProjectSettings("Project/VR Process Gizmo");
         }
     }
 }

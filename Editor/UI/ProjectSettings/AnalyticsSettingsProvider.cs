@@ -1,14 +1,14 @@
 //using System;
-//using VPG.CreatorEditor.Analytics;
+//using VPG.Editor.Analytics;
 //using UnityEditor;
 //using UnityEngine;
 
 // VPG - Disabled analytics page.
-//namespace VPG.CreatorEditor.UI
+//namespace VPG.Editor.UI
 //{
 //    internal class AnalyticsSettingsProvider : BaseSettingsProvider
 //    {
-//        const string Path = "Project/Creator/Analytics";
+//        const string Path = "Project/VR Process Gizmo/Analytics";
 
 //        public AnalyticsSettingsProvider() : base(Path, SettingsScope.Project)
 //        {

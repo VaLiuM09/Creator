@@ -1,15 +1,15 @@
-﻿using System.Collections.Generic;
-using VPG.CreatorEditor.UI;
+using System.Collections.Generic;
+using VPG.Editor.UI;
 using UnityEditor;
 using UnityEngine;
 
-namespace VPG.CreatorEditor.UI.Wizard
+namespace VPG.Editor.UI.Wizard
 {
     internal class WizardNavigation
     {
         private const float PaddingTop = 4f;
 
-        protected EditorIcon logo = new EditorIcon("logo_creator_icon");
+        protected EditorIcon logo = new EditorIcon("logo_vpg_icon");
 
         protected List<IWizardNavigationEntry> Entries { get; }
 
@@ -41,7 +41,7 @@ namespace VPG.CreatorEditor.UI.Wizard
             EditorGUI.DrawRect(new Rect(0, Entries.Count * EntryHeight + 1 + PaddingTop, window.width, window.height - 1 - Entries.Count * EntryHeight), WizardWindow.LineColor);
 
             Rect logoRect = new Rect(window.x + 16f, window.y + window.height - (window.width / 2) - 5, window.width - 32f, (window.width - 32) * 0.34f);
-            GUI.DrawTexture(logoRect, logo.Texture);
+            GUI.DrawTexture(logoRect, logo.Texture, ScaleMode.ScaleToFit);
         }
 
         protected Rect GetEntryRect(int position, float width)
@@ -56,7 +56,7 @@ namespace VPG.CreatorEditor.UI.Wizard
                 get
                 {
                     GUIStyle style = new GUIStyle(GUI.skin.label);
-                    style.normal.textColor = CreatorEditorStyles.HighlightTextColor;
+                    style.normal.textColor = VPGEditorStyles.HighlightTextColor;
                     return style;
                 }
             }

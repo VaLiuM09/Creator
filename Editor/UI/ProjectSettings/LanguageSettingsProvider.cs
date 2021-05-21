@@ -1,18 +1,18 @@
-﻿using VPG.Creator.Core.Internationalization;
+using VPG.Core.Internationalization;
 using UnityEditor;
 
-namespace VPG.CreatorEditor.UI
+namespace VPG.Editor.UI
 {
     public class LanguageSettingsProvider : BaseSettingsProvider
     {
-        const string Path = "Project/Creator/Language";
+        const string Path = "Project/VR Process Gizmo/Language";
 
         public LanguageSettingsProvider() : base(Path, SettingsScope.Project) {}
 
         protected override void InternalDraw(string searchContext)
         {
             LanguageSettings config = LanguageSettings.Instance;
-            Editor.CreateEditor(config).OnInspectorGUI();
+            UnityEditor.Editor.CreateEditor(config).OnInspectorGUI();
         }
 
         public override void OnDeactivate()

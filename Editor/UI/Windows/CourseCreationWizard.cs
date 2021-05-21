@@ -1,10 +1,10 @@
-using VPG.Creator.Core;
-using VPG.Creator.Core.Configuration;
+using VPG.Core;
+using VPG.Core.Configuration;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace VPG.CreatorEditor.UI.Windows
+namespace VPG.Editor.UI.Windows
 {
     /// <summary>
     /// Wizard for training course creation and management.
@@ -13,7 +13,7 @@ namespace VPG.CreatorEditor.UI.Windows
     {
         private static CourseCreationWizard window;
 
-        // CourseCreationWizard is obsolete and was replaced by CreatorSetupWizard
+        // CourseCreationWizard is obsolete and was replaced by VPGSetupWizard
 #if !UNITY_2019_4_OR_NEWER || UNITY_EDITOR_OSX
         [MenuItem("VR Process Gizmo/Create New Course...")]
 #endif
@@ -54,7 +54,7 @@ namespace VPG.CreatorEditor.UI.Windows
             labelStyle.richText = true;
             labelStyle.wordWrap = true;
 
-            EditorIcon logo = new EditorIcon("logo_creator");
+            EditorIcon logo = new EditorIcon("logo_vpg");
             Rect rect = GUILayoutUtility.GetRect(position.width, 150, GUI.skin.box);
             GUI.DrawTexture(rect, logo.Texture, ScaleMode.ScaleToFit);
 

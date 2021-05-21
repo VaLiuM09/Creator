@@ -6,7 +6,7 @@ using Innoactive.CreatorPro.Account;
 using UnityEditor;
 using UnityEngine;
 
-namespace VPG.CreatorEditor.Analytics
+namespace VPG.Editor.Analytics
 {
     /// <summary>
     /// Checks on each recompile/start of the unity if we have already sent a hello.
@@ -50,7 +50,7 @@ namespace VPG.CreatorEditor.Analytics
                 tracker.SendSessionStart();
                 // Send the Unity Editor version.
                 tracker.Send(new AnalyticsEvent() {Category = "unity", Action = "version", Label = Application.unityVersion});
-                // Send the Creator Core version.
+                // Send the VPG Core version.
                 tracker.Send(new AnalyticsEvent() {Category = "creator", Action = "version", Label = EditorUtils.GetCoreVersion()});
                 // Send the Creator license type.
 #if CREATOR_PRO

@@ -2,19 +2,19 @@ using UnityEditor;
 using UnityEngine;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
-using VPG.Creator.Core;
-using VPG.CreatorEditor.UI.Windows;
-using VPG.Creator.Core.Configuration;
+using VPG.Core;
+using VPG.Editor.UI.Windows;
+using VPG.Core.Configuration;
 
-namespace VPG.CreatorEditor
+namespace VPG.Editor
 {
     /// <summary>
-    /// A class that handles interactions between Creator windows and course assets by using selected <seealso cref="IEditingStrategy"/> strategy.
+    /// A class that handles interactions between VPG windows and course assets by using selected <seealso cref="IEditingStrategy"/> strategy.
     /// </summary>
     [InitializeOnLoad]
     internal static class GlobalEditorHandler
     {
-        internal const string LastEditedCourseNameKey = "VPG.Creator.Editors.LastEditedCourseName";
+        internal const string LastEditedCourseNameKey = "VPG.Editors.LastEditedCourseName";
 
         private static IEditingStrategy strategy;
 

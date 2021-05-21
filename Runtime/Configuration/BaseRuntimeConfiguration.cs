@@ -1,12 +1,12 @@
 using System;
-using VPG.Creator.Core.Configuration.Modes;
-using VPG.Creator.Core.IO;
-using VPG.Creator.Core.RestrictiveEnvironment;
-using VPG.Creator.Core.SceneObjects;
-using VPG.Creator.Core.Serialization;
+using VPG.Core.Configuration.Modes;
+using VPG.Core.IO;
+using VPG.Core.RestrictiveEnvironment;
+using VPG.Core.SceneObjects;
+using VPG.Core.Serialization;
 using UnityEngine;
 
-namespace VPG.Creator.Core.Configuration
+namespace VPG.Core.Configuration
 {
     /// <summary>
     /// Base class for your runtime course configuration. Extend it to create your own.
@@ -38,13 +38,13 @@ namespace VPG.Creator.Core.Configuration
         /// Default input action asset which is used when no customization of key bindings are done.
         /// Should be stored inside the VR Process Gizmo package.
         /// </summary>
-        public virtual string DefaultInputActionAssetPath { get; } = "KeyBindings/CreatorDefaultKeyBindings";
+        public virtual string DefaultInputActionAssetPath { get; } = "KeyBindings/VPGDefaultKeyBindings";
 
         /// <summary>
         /// Custom InputActionAsset path which is used when key bindings are modified.
         /// Should be stored in project path.
         /// </summary>
-        public virtual string CustomInputActionAssetPath { get; } = "KeyBindings/CreatorCustomKeyBindings";
+        public virtual string CustomInputActionAssetPath { get; } = "KeyBindings/VPGCustomKeyBindings";
 
 #if ENABLE_INPUT_SYSTEM
         private UnityEngine.InputSystem.InputActionAsset inputActionAsset;

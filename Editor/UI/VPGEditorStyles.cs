@@ -3,9 +3,9 @@ using UnityEditor;
 using UnityEditor.Graphs;
 using UnityEngine;
 
-namespace VPG.CreatorEditor.UI
+namespace VPG.Editor.UI
 {
-    public static class CreatorEditorStyles
+    public static class VPGEditorStyles
     {
         public const int BaseIndent = 2;
 

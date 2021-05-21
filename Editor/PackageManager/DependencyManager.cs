@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using VPG.Creator.Core.Utils;
+using VPG.Core.Utils;
 using UnityEditor;
 using Debug = UnityEngine.Debug;
 
-namespace VPG.CreatorEditor.PackageManager
+namespace VPG.Editor.PackageManager
 {
     /// <summary>
     /// Automatically retrieves all dependencies from the Unity's Package Manager at the startup.
@@ -79,7 +79,7 @@ namespace VPG.CreatorEditor.PackageManager
             foreach (Dependency dependency in dependenciesList)
             {
                 int index = dependenciesList.FindIndex(item => item == dependency);
-                EditorUtility.DisplayProgressBar("Importing Creator dependencies", $"Fetching {dependency.Package}", index * percentage);
+                EditorUtility.DisplayProgressBar("Importing dependencies", $"Fetching {dependency.Package}", index * percentage);
 
                 if (PackageOperationsManager.IsPackageLoaded(dependency.Package, dependency.Version))
                 {
