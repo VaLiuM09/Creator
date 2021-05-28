@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using VPG.Core.Input;
 using UnityEditor;
 
@@ -6,7 +6,7 @@ using UnityEditor;
 public static class InputSystemChecker
 {
     private const string message =
-        "From Creator version 2.11 onwards Unity's new Input System is required." +
+        "VR Process Gizmo requires Unity's new Input System." +
         "\n\nTo switch from the legacy input system to the new one, open the 'Player Settings' and set the " +
         "option 'Active Input Handling' to 'Both' or 'Input System Package (New)'.";
 
