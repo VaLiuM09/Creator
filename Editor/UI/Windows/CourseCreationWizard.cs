@@ -15,7 +15,7 @@ namespace VPG.Editor.UI.Windows
 
         // CourseCreationWizard is obsolete and was replaced by VPGSetupWizard
 #if !UNITY_2019_4_OR_NEWER || UNITY_EDITOR_OSX
-        [MenuItem("VR Process Gizmo/Create New Course...")]
+        [MenuItem("Tools/VR Process Gizmo/Create New Course...")]
 #endif
         private static void ShowWizard()
         {

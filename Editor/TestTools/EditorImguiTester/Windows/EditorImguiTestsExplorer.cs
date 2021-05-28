@@ -79,7 +79,7 @@ namespace VPG.Editor.TestTools
             };
         }
 
-        [MenuItem("VR Process Gizmo/Developer/Editor IMGUI Tests Explorer", false, 81)]
+        [MenuItem("Tools/VR Process Gizmo/Developer/Editor IMGUI Tests Explorer", false, 81)]
         private static void ShowFromMenu()
         {
             GetWindow<EditorImguiTestsExplorer>();
