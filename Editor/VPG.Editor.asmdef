@@ -1,5 +1,6 @@
 {
     "name": "VPG.Editor",
+    "rootNamespace": "",
     "references": [
         "GUID:c8561f9de838ac04d8feeda695bc572d",
         "GUID:e40ba710768534012815d3193fa296cb",
@@ -30,6 +31,11 @@
             "name": "com.unity.xr.windowsmr",
             "expression": "",
             "define": "WINDOWS_XR"
+        },
+        {
+            "name": "com.unity.xr.openxr",
+            "expression": "",
+            "define": "OPEN_XR"
         }
     ],
     "noEngineReferences": false

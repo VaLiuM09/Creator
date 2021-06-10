@@ -22,13 +22,15 @@ namespace VPG.Editor.XRUtils
         private const string OculusXRPackage = "com.unity.xr.oculus";
         private const string WindowsXRPackage = "com.unity.xr.windowsmr";
         private const string XRManagementPackage = "com.unity.xr.management@4.0.1";
+        private const string OpenXRPackage = "com.unity.xr.openxr";
 
         public enum XRSDK
         {
             None,
             OpenVR,
             Oculus,
-            WindowsMR
+            WindowsMR,
+            OpenXR
         }
 
         public enum XRConfiguration
@@ -50,14 +52,25 @@ namespace VPG.Editor.XRUtils
         {
             if (GetCurrentXRConfiguration().Any(loader => loader == XRConfiguration.OpenVRXR || loader == XRConfiguration.OpenVRLegacy))
             {
-                Debug.LogWarning("OpenVR is already loaded.");
+                Debug.LogWarning("OpenVR/XR is already loaded.");
                 return;
             }
 
             EditorPrefs.DeleteKey(IsXRLoaderInitialized);
 
 #if UNITY_2020_1_OR_NEWER
-            // This will be integrated as soon as there is an OpenVR XR SDK compatible with the XR interaction framework.
+#if UNITY_XR_MANAGEMENT && OPEN_XR
+#pragma warning disable CS4014
+            TryToEnableLoader("OpenXRLoader");
+#pragma warning restore CS4014
+#elif !UNITY_XR_MANAGEMENT
+            DisplayDialog("XR Plug-in Management");
+            EditorPrefs.SetInt(nameof(XRSDK), (int)XRSDK.OpenXR);
+            PackageOperationsManager.LoadPackage(XRManagementPackage);
+#else
+            DisplayDialog("OpenXR");
+            PackageOperationsManager.LoadPackage(OpenXRPackage);
+#endif
 #elif UNITY_2019_1_OR_NEWER
             if (EditorReflectionUtils.AssemblyExists("Unity.XR.Management") == false)
             {
@@ -147,6 +160,11 @@ namespace VPG.Editor.XRUtils
                         {
                             enabledSDKs.Add(XRConfiguration.WindowsMR);
                         }
+
+                        if(loader.name == "Open XR Loader")
+                        {
+                            enabledSDKs.Add(XRConfiguration.OpenVRXR);
+                        }
                     }
 
                     enabledSDKs.Add(XRConfiguration.XRManagement);
@@ -197,7 +215,7 @@ namespace VPG.Editor.XRUtils
 
                 if (stopwatch.ElapsedMilliseconds > 5000f)
                 {
-                    EditorUtility.DisplayDialog($"The {loaderName} could not be enable!", $"The XR general settings file is missing. Enable {loaderName} manually here:\nEdit > Project Settings... > XR Plug-in Management.", "Continue");
+                    EditorUtility.DisplayDialog($"The {loaderName} could not be enabled!", $"The XR general settings file is missing. Enable {loaderName} manually here:\nEdit > Project Settings... > XR Plug-in Management.", "Continue");
                     return false;
                 }
             }
