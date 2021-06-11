@@ -27,7 +27,7 @@ namespace VPG.Editor.UI.Wizard
         private readonly List<string> nameplates = new List<string>()
         {
             "None",
-            "HTC Vive / Valve Index (OpenVR)",
+            "OpenVR/OpenXR",
             "Oculus Quest/Rift",
             "Windows MR",
             "Other"
@@ -87,14 +87,14 @@ namespace VPG.Editor.UI.Wizard
         {
             if (isCompleted && wasApplied)
             {
-                AnalyticsEvent hardwareSelectedEvent = new AnalyticsEvent
-                {
-                    Category = "creator",
-                    Action = "hardware_selected",
-                    Label = selectedLoader == XRLoader.Other ? otherHardwareText : selectedLoader.ToString()
-                };
+                //AnalyticsEvent hardwareSelectedEvent = new AnalyticsEvent
+                //{
+                //    Category = "creator",
+                //    Action = "hardware_selected",
+                //    Label = selectedLoader == XRLoader.Other ? otherHardwareText : selectedLoader.ToString()
+                //};
 
-                AnalyticsUtils.CreateTracker().Send(hardwareSelectedEvent);
+                //AnalyticsUtils.CreateTracker().Send(hardwareSelectedEvent);
 
                 switch (selectedLoader)
                 {
