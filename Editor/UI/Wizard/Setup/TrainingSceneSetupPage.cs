@@ -1,3 +1,6 @@
+using System;
+using System.Linq;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 using VPG.Editor.Setup;
@@ -20,6 +23,9 @@ namespace VPG.Editor.UI.Wizard
 
         [SerializeField]
         private bool loadSampleScene = false;
+
+        [SerializeField]
+        private bool loadDemoScene = false;
 
         [SerializeField]
         private string courseName = "My VR Training course";
@@ -70,6 +76,7 @@ namespace VPG.Editor.UI.Wizard
                     useCurrentScene = true;
                     createNewScene = false;
                     loadSampleScene = false;
+                    loadDemoScene = false;
                 }
 
                 bool isCreateNewScene = GUILayout.Toggle(createNewScene, "Create a new scene", VPGEditorStyles.RadioButton);
@@ -78,7 +85,8 @@ namespace VPG.Editor.UI.Wizard
                     createNewScene = true;
                     useCurrentScene = false;
                     loadSampleScene = false;
-                }
+                    loadDemoScene = false;
+            }
 
                 EditorGUILayout.Space();
 
@@ -87,6 +95,7 @@ namespace VPG.Editor.UI.Wizard
                 {
                     createNewScene = false;
                     useCurrentScene = false;
+                    loadDemoScene = false;
                     CanProceed = true;
 
                     GUILayout.BeginHorizontal();
@@ -95,6 +104,18 @@ namespace VPG.Editor.UI.Wizard
                         VPGGUILayout.DrawLink("Hello Creator – a 5-step guide to a basic training application", "https://developers.innoactive.de/documentation/creator/latest/articles/step-by-step-guides/hello-creator.html");
                     }
                     GUILayout.EndHorizontal();
+                }
+
+                if(EditorReflectionUtils.AssemblyExists("VPG.Editor.SampleScene"))
+                {
+                    loadDemoScene = GUILayout.Toggle(loadDemoScene, "Load Scene from Demo Package", VPGEditorStyles.RadioButton);
+                    if(loadDemoScene)
+                    {
+                        createNewScene = false;
+                        useCurrentScene = false;
+                        loadSampleScene = false;
+                        CanProceed = true;
+                    }
                 }
                 GUILayout.EndVertical();
             GUILayout.EndHorizontal();
@@ -137,6 +158,16 @@ namespace VPG.Editor.UI.Wizard
             if (loadSampleScene)
             {
                 SceneSetupUtils.CreateNewSimpleExampleScene();
+                return;
+            }
+
+            if (loadDemoScene)
+            {
+
+                Assembly sampleSceneAssembly = AppDomain.CurrentDomain.GetAssemblies().First(assembly => assembly.GetName().Name == "VPG.Editor.SampleScene");
+                Type sceneLoaderClass = sampleSceneAssembly.GetType("VPG.Editor.SampleScene.DemoSceneLoader");
+                MethodInfo loadScene = sceneLoaderClass.GetMethod("LoadDemoScene");
+                loadScene.Invoke(null, new object[0]);
                 return;
             }
 
