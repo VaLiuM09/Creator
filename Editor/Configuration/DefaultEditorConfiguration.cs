@@ -25,7 +25,7 @@ namespace VPG.Editor.Configuration
         /// <inheritdoc />
         public virtual string AllowedMenuItemsSettingsAssetPath
         {
-            get { return "Assets/Editor/VPG/Config/AllowedMenuItems.json"; }
+            get { return "Assets/VPG/Editor/Config/AllowedMenuItems.json"; }
         }
 
         /// <inheritdoc />
