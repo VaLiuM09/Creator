@@ -11,11 +11,11 @@ namespace VPG.Editor.Configuration
         /// <summary>
         /// Menu items required by this configuration.
         /// </summary>
-        public IEnumerable<Type> RequiredMenuItems { get; }
+        IEnumerable<Type> RequiredMenuItems { get; }
 
         /// <summary>
         /// Menu items disabled by this configuration.
         /// </summary>
-        public IEnumerable<Type> DisabledMenuItems { get; }
+        IEnumerable<Type> DisabledMenuItems { get; }
     }
 }
